@@ -1,0 +1,8 @@
+# Ignore .github folder
+.github/**/*
+
+# Ignore public folder
+public/**/*
+
+# Ignore
+LICENSE
