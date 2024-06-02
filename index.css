@@ -44,7 +44,49 @@ li {
   width: fit-content;
   align-items: center;
   padding: 15px 10px;
-  gap: 30px;
+  gap: 15px;
   background-color: #e6edf3;
   border-radius: 5px;
+}
+
+.social-media {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.social-media-icon {
+  display: inline-block;
+  padding: 4px;
+  height: 42px;
+  width: 42px;
+  transition-duration: 0.3s;
+  transition-property: filter, padding, width;
+}
+
+.social-media-icon:hover {
+  padding: 0;
+}
+
+.linkedin:hover {
+  filter: drop-shadow(0 0 0.2em#0077b5);
+}
+
+.x-twitter:hover {
+  filter: drop-shadow(0 0 0.2em#000);
+}
+
+.instagram:hover {
+  filter: drop-shadow(0 0 0.2em#e4405f);
+}
+
+.medium:hover {
+  filter: drop-shadow(0 0 0.2em#000);
+}
+
+.stack-overflow:hover {
+  filter: drop-shadow(0 0 0.2em#e7700d);
+}
+
+.github:hover {
+  filter: drop-shadow(0 0 0.2em#000);
 }
