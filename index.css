@@ -28,17 +28,32 @@ a:visited {
   position: relative;
   width: 1000px;
   margin: 20px auto;
-  padding: 0 30px;
+  padding: 10px 30px;
+  background-color: lightskyblue;
+  border-radius: 5px;
+}
+
+.name {
+  margin-top: 200px;
 }
 
 li {
   width: 90%;
 }
 
+.profile-photo {
+  top: 0;
+  right: -70px;
+  position: absolute;
+  height: 250px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .social-media-container {
   position: absolute;
-  top: 60px;
-  right: 0px;
+  top: 258px;
+  right: -70px;
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -56,8 +71,10 @@ li {
 
 .social-media-icon {
   display: inline-block;
+  text-wrap: nowrap;
   padding: 4px;
   height: 40px;
+  line-height: 40px;
   width: 40px;
   transition-duration: 0.3s;
   transition-property: filter, padding, width;
