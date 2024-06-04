@@ -27,7 +27,7 @@
   padding: 2px 0;
 }
 
-.home-link-container::first-letter {
+.home-link::first-letter {
   font-size: 25px;
 }
 
