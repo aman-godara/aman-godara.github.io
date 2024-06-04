@@ -6,6 +6,53 @@
   box-sizing: border-box;
 }
 
+.layout {
+  margin: 20px auto;
+  width: 1000px;
+}
+
+.page-header {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-header a {
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  text-wrap: nowrap;
+}
+
+.home-link-container::first-letter {
+  font-size: 25px;
+}
+
+.page-link-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  gap: 15px;
+}
+
+.page-link {
+  flex: 1 1 0;
+  background-image: linear-gradient(#000, #000);
+  background-size: 0% 0.15em;
+  background-position-y: 100%;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease-in-out;
+}
+
+.page-link:hover,
+.page-link:active,
+.page-link:focus {
+  background-size: 100% 0.15em;
+}
+
 h1,
 h2 {
   margin: 20px 0 5px 0;
@@ -26,8 +73,6 @@ a:visited {
 
 .page-container {
   position: relative;
-  width: 1000px;
-  margin: 20px auto;
   padding: 10px 30px;
   background-color: lightskyblue;
   border-radius: 5px;
@@ -58,8 +103,8 @@ li {
   flex-direction: column;
   width: fit-content;
   align-items: center;
-  padding: 15px 10px;
-  gap: 15px;
+  padding: 17px 10px;
+  gap: 17px;
   background-color: #e6edf3;
   border-radius: 5px;
 }
@@ -67,6 +112,7 @@ li {
 .social-media {
   text-align: center;
   vertical-align: middle;
+  height: 40px; /* hack fix: anchor taking more height than content */
 }
 
 .social-media-icon {
