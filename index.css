@@ -1,21 +1,36 @@
 * {
-  font-family: sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.4;
   box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1.4;
 }
 
 .layout {
-  margin: 20px auto;
+  margin: 15px auto;
   width: 1000px;
 }
 
 .page-header {
-  margin: 20px;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
+}
+
+.home-link-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.page-link-container {
+  display: flex;
+  align-items: stretch;
+  width: 60%;
+}
+
+.page-link {
+  flex: 1 1 0;
 }
 
 .page-header a {
@@ -23,24 +38,9 @@
   color: #000;
   text-align: center;
   text-wrap: nowrap;
-  display: inline-block;
-  padding: 2px 0;
-}
-
-.home-link::first-letter {
-  font-size: 25px;
-}
-
-.page-link-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60%;
-  gap: 15px;
-}
-
-.page-link {
-  flex: 1 1 0;
   background-image: linear-gradient(#000, #000);
   background-size: 0% 0.15em;
   background-position-y: 100%;
@@ -49,58 +49,66 @@
   transition: background-size 0.3s ease-in-out;
 }
 
-.page-link:hover,
-.page-link:active,
-.page-link:focus {
+.page-header a:hover,
+.page-header a:active,
+.page-header a:focus {
   background-size: 100% 0.15em;
 }
 
-h1,
-h2 {
-  margin: 20px 0 5px 0;
+.home::first-letter {
+  font-size: 25px;
+  font-weight: bold;
 }
-
-/* a:link {
-  text-decoration: none;
-}
-
-a:hover {
-}
-
-a:active {
-}
-
-a:visited {
-} */
 
 .page-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.main {
   position: relative;
-  padding: 10px 30px;
-  background-color: lightskyblue;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
   border-radius: 5px;
+}
+
+.photo-container {
+  position: relative;
+  flex: 0 0 auto;
+  width: 500px; /* same width as to photo */
+  height: 500px; /* same height as to photo */
+}
+
+.intro {
+  flex: 1 1 auto;
+  padding-right: 60px;
+  padding-bottom: 15px;
+  text-align: end;
+}
+
+.photo {
+  position: absolute;
+  right: 90px;
+  width: 500px;
+  cursor: pointer;
 }
 
 .name {
-  margin-top: 200px;
+  font-size: 45px;
 }
 
-li {
-  width: 90%;
-}
-
-.profile-photo {
-  top: 0;
-  right: -70px;
-  position: absolute;
-  height: 250px;
-  border-radius: 5px;
-  cursor: pointer;
+.highlight-text {
+  color: orangered;
 }
 
 .social-media-container {
   position: absolute;
-  top: 258px;
-  right: -70px;
+  top: 0;
+  right: -65px;
   display: flex;
   flex-direction: column;
   width: fit-content;
