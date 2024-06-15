@@ -60,6 +60,10 @@
   font-weight: bold;
 }
 
+.home {
+  padding: 0 15px;
+}
+
 .page-container {
   display: flex;
   align-items: baseline;
