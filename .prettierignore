@@ -1,8 +1,8 @@
-# Ignore .github folder
-.github/**/*
+.vscode
+node_modules
+dist
 
-# Ignore public folder
-public/**/*
+public
+assets
 
-# Ignore
 LICENSE

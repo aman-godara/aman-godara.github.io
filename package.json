@@ -1,0 +1,27 @@
+{
+  "name": "aman-godara.github.io",
+  "version": "0.1.0",
+  "description": "personal website",
+  "main": "./src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "webpack serve --config webpack.config.js --hot --open --port 8080 --devtool source-map --mode development",
+    "build": "webpack --config webpack.config.js --mode production",
+    "build:dev": "webpack --config webpack.config.js --mode development --devtool source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/aman-godara/aman-godara.github.io.git"
+  },
+  "author": "aman-godara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aman-godara/aman-godara.github.io/issues"
+  },
+  "homepage": "https://github.com/aman-godara/aman-godara.github.io#readme",
+  "devDependencies": {
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}
