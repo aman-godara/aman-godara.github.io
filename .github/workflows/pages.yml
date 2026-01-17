@@ -31,10 +31,10 @@ jobs:
 
       # 5. Upload build artifacts for GitHub Pages
       - name: Upload artifact for Pages
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist   # folder where webpack outputs your files
 
       # 6. Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
