@@ -1,0 +1,40 @@
+name: GitHub Pages Build & Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Check out the repo
+      - uses: actions/checkout@v4
+
+      # 2. Install Node.js
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # 3. Install dependencies
+      - run: npm ci
+
+      # 4. Run webpack build
+      - run: npm run build
+
+      # 5. Upload build artifacts for GitHub Pages
+      - name: Upload artifact for Pages
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./dist   # folder where webpack outputs your files
+
+      # 6. Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1

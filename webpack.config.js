@@ -1,5 +1,7 @@
 import path from "path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import CopyWebpackPlugin from "copy-webpack-plugin";
+
 const __dirname = import.meta.dirname;
 
 export default {
@@ -31,6 +33,9 @@ export default {
       template: "./src/wip/index.html",
       filename: "wip/index.html",
       chunks: ["wip/index"],
+    }),
+    new CopyWebpackPlugin({
+      patterns: [{ from: "public", to: "public" }],
     }),
   ],
 };
