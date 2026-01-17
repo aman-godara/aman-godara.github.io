@@ -1,0 +1,1 @@
+[![GitHub Pages Build & Deploy](https://github.com/aman-godara/aman-godara.github.io/actions/workflows/pages.yml/badge.svg?branch=main)](https://github.com/aman-godara/aman-godara.github.io/actions/workflows/pages.yml)
