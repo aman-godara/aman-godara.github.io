@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "webpack serve --config webpack.config.development.js --hot --open --port 8080 --devtool source-map --mode development",
     "build": "webpack --config webpack.config.production.js --mode production",
-    "build:dev": "webpack --config webpack.config.development.js --mode development --devtool source-map"
+    "build:dev": "webpack --config webpack.config.development.js --mode development --devtool source-map",
+    "preview": "npm run build && serve dist -p 3000"
   },
   "repository": {
     "type": "git",
@@ -22,8 +23,10 @@
   "devDependencies": {
     "copy-webpack-plugin": "^13.0.1",
     "css-loader": "^7.1.2",
+    "html-webpack-partials-plugin": "^0.8.0",
     "html-webpack-plugin": "^5.6.6",
     "mini-css-extract-plugin": "^2.10.0",
+    "serve": "^14.2.5",
     "style-loader": "^4.0.0",
     "webpack": "^5.93.0",
     "webpack-cli": "^5.1.4",
