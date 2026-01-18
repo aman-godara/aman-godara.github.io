@@ -134,12 +134,12 @@
 
   .page-link-container {
     flex-direction: column;
-    width: calc(100% + 30px);
+    width: 100%;
     order: 3;
     position: absolute;
     top: 100%;
-    left: -15px;
-    right: -15px;
+    left: 0;
+    right: 0;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     border-radius: 12px;
