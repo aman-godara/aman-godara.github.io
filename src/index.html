@@ -12,12 +12,10 @@
   <meta name="author" content="Aman Godara" />
   <meta name="theme-color" content="#ffffff" />
 
-  <!-- Preconnect to Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <!-- Load Poppins Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Preload fonts for performance -->
+  <link rel="preload" href="/public/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/public/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/public/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
 
   <!-- Open Graph tags -->
   <meta property="og:title" content="Aman Godara - 2nd best Software Developer" />
@@ -69,19 +67,16 @@
   <title>Aman Godara - 2nd best Software Developer</title>
   <link rel="canonical" href="https://aman-godara.github.io" />
   <link rel="icon" type="image/svg+xml" href="/public/images/2huU88Mi230hmkFzU7iBIlASOVL.svg" />
-  <link rel="apple-touch-icon" href="/public/images/aman-godara.png" />
+  <link rel="apple-touch-icon" href="/public/images/aman-godara-og.png" />
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
+<body>
   <div class="layout">
-    <!-- itemtype: Person (not supported by Google) or ProfilePage  -->
-    <!-- itemprop: primaryImageOfPage (let's see) -->
-    <!-- JSON-LD or microdata -->
     <div class="page-container">
       <div class="main">
         <div class="main-content">
           <div class="photo-container">
-            <img src="/public/images/aman-godara.png" alt="Aman Godara" class="photo" itemprop="primaryImageOfPage" />
+            <img src="/public/images/aman-godara.png" alt="Aman Godara" class="photo" />
           </div>
           <aside class="social-media-container">
             <a class="social-media" href="https://www.linkedin.com/in/aman-godara" target="_blank" rel="noopener"
