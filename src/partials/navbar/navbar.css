@@ -37,7 +37,6 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  transition: color 0.3s ease;
 }
 
 .page-header a::after {

@@ -80,7 +80,7 @@ body {
 .photo {
   width: 100%;
   max-width: 500px;
-  min-width: 200px;
+  min-width: 250px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   cursor: pointer;
@@ -247,11 +247,6 @@ body {
     gap: 10px;
   }
 
-  .photo-container {
-    width: 100%;
-    max-width: 250px;
-  }
-
   .social-media-container {
     gap: 10px;
   }
@@ -275,20 +270,11 @@ body {
     width: 35px;
     line-height: 35px;
   }
-
-  .page-header {
-    padding: 0 0 15px 0;
-    margin-bottom: 15px;
-  }
 }
 
 @media (max-width: 400px) {
   .main-content {
     gap: 8px;
-  }
-
-  .photo-container {
-    max-width: 200px;
   }
 
   .name {
