@@ -24,6 +24,14 @@ export default {
         test: /\.css$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
+      // don't hash the fonts
+      {
+        test: /\.woff2$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'public/fonts/[name][ext]'
+        }
+      }
     ],
   },
   plugins: [
@@ -54,7 +62,12 @@ export default {
       }
     ]),
     new CopyWebpackPlugin({
-      patterns: [{ from: "public", to: "public" }],
+      patterns: [
+        { from: "public/fontawesome", to: "public/fontawesome" },
+        { from: "public/images", to: "public/images" },
+        { from: "928f1b0cf71c45f9b26a844d34ad2116.txt", to: "928f1b0cf71c45f9b26a844d34ad2116.txt" },
+        { from: "google605c594dd88a86b5.html", to: "google605c594dd88a86b5.html" }
+      ],
     }),
   ],
 };

@@ -24,6 +24,14 @@ export default {
         use: ["style-loader", "css-loader"],
         include: path.resolve(__dirname, "src"),
       },
+      // don't hash the fonts
+      {
+        test: /\.woff2$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'public/fonts/[name][ext]'
+        }
+      }
     ],
   },
   plugins: [
@@ -51,7 +59,10 @@ export default {
       }
     ]),
     new CopyWebpackPlugin({
-      patterns: [{ from: "public", to: "public" }],
+      patterns: [
+        { from: "public/fontawesome", to: "public/fontawesome" },
+        { from: "public/images", to: "public/images" },
+      ],
     }),
   ],
 };
