@@ -17,6 +17,9 @@
   <link rel="preload" href="/public/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/public/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
 
+  <!-- Preload LCP image -->
+  <link rel="preload" href="/public/images/aman-godara.png" as="image" fetchpriority="high">
+
   <!-- Open Graph tags -->
   <meta property="og:title" content="Aman Godara - 2nd best Software Developer" />
   <meta property="og:description"
@@ -73,7 +76,7 @@
 <body>
   <div class="layout">
     <div class="page-container">
-      <div class="main">
+      <main class="main">
         <div class="main-content">
           <div class="photo-container">
             <img src="/public/images/aman-godara.png" alt="Aman Godara" class="photo" />
@@ -108,7 +111,7 @@
           </aside>
         </div>
         <div class="intro">
-          <a href="/wip/" style="text-decoration: none; color: inherit;">
+          <a href="/wip/" style="text-decoration: none; color: inherit;" aria-label="About me">
             <h1 class="name">
               <span>Aman <span class="highlight-text">Go</span>dara</span>
               <img src="/public/fontawesome/angles-right-solid-full.svg" class="arrow-icon" alt="" />
@@ -121,7 +124,7 @@
             </h2>
           </a>
         </div>
-      </div>
+      </main>
     </div>
   </div>
 </body>
