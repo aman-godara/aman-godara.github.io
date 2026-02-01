@@ -1,0 +1,9 @@
+# Block specific webp images from being indexed
+User-agent: Googlebot-Image
+Disallow: /public/images/aman-godara-500.webp
+Disallow: /public/images/aman-godara-800.webp
+
+# Allow all other content for all crawlers
+User-agent: *
+Allow: /
+
