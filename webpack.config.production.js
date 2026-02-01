@@ -65,9 +65,9 @@ export default {
       patterns: [
         { from: "public/fontawesome", to: "public/fontawesome" },
         { from: "public/images", to: "public/images" },
-        { from: "public/robots.txt", to: "public/robots.txt" },
         { from: "928f1b0cf71c45f9b26a844d34ad2116.txt", to: "928f1b0cf71c45f9b26a844d34ad2116.txt" },
         { from: "google605c594dd88a86b5.html", to: "google605c594dd88a86b5.html" },
+        { from: "robots.txt", to: "robots.txt" },
       ],
     }),
   ],
