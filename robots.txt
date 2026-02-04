@@ -1,8 +1,7 @@
-# Block transparent webp images from being indexed in Google Images
-User-agent: Googlebot-Image
+# Block fontawesome icons, fonts, and transparent webp images from all crawlers
+User-agent: *
+Disallow: /public/fontawesome/
+Disallow: /public/fonts/
 Disallow: /public/images/aman-godara-500.webp
 Disallow: /public/images/aman-godara-800.webp
-
-# Allow all other content for all crawlers
-User-agent: *
 Allow: /
