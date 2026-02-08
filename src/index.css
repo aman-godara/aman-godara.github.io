@@ -83,7 +83,6 @@ body {
   min-width: 250px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  cursor: pointer;
   transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
@@ -95,13 +94,18 @@ body {
   font-size: 38px;
   font-weight: 400;
   display: flex;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+}
+
+.name a {
+  display: flex;
   align-items: center;
   gap: 15px;
-  position: relative;
   cursor: pointer;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   width: fit-content;
-  margin-left: auto;
 }
 
 .name .arrow-icon {
@@ -112,11 +116,11 @@ body {
   transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.name:hover {
+.name a:hover {
   transform: translateX(-20px);
 }
 
-.name:hover .arrow-icon {
+.name a:hover .arrow-icon {
   opacity: 1;
   transform: translateX(0);
 }
@@ -126,13 +130,18 @@ body {
   font-weight: 400;
   color: #555;
   display: flex;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+}
+
+.tagline a {
+  display: flex;
   align-items: center;
   gap: 15px;
-  position: relative;
   cursor: pointer;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   width: fit-content;
-  margin-left: auto;
 }
 
 .tagline .arrow-icon {
@@ -143,11 +152,11 @@ body {
   transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.tagline:hover {
+.tagline a:hover {
   transform: translateX(-20px);
 }
 
-.tagline:hover .arrow-icon {
+.tagline a:hover .arrow-icon {
   opacity: 1;
   transform: translateX(0);
 }
