@@ -1,7 +1,10 @@
-# Block fontawesome icons, fonts, and transparent webp images from all crawlers
-User-agent: *
+# Block fontawesome icons and transparent webp images from image crawlers
+User-agent: Googlebot-Image
+User-agent: Bingbot
 Disallow: /public/fontawesome/
-Disallow: /public/fonts/
 Disallow: /public/images/aman-godara-500.webp
 Disallow: /public/images/aman-godara-800.webp
+
+# Allow all other crawlers
+User-agent: *
 Allow: /
